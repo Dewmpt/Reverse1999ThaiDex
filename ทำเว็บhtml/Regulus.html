@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Regulus - Reverse 1999 Thai Dex</title>
+  <style>
+    body {
+      background-color: #c6bbbb;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    .character-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .character-header img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    .star {
+      color: gold;
+      font-size: 20px;
+    }
+    .element {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      display: inline-block;
+    }
+    .element.reality { background-color: #6a5acd; } /* Reality */
+    .element.mental { background-color: #ff6347; }  /* Mental */
+    .element.stardust { background-color: #1e90ff; } /* ตัวอย่างเพิ่มได้ */
+    .skills {
+      margin-top: 30px;
+    }
+    .skill {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .skill img {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+    }
+    h2, h3 {
+      margin: 5px 0;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: orange;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- แถบหัว -->
+  <table width="100%" bgcolor="#888888" cellpadding="10">
+    <tr>
+      <td width="100">
+        <img src="Thai Dex logo.jpg" width="100" height="100" alt="โลโก้">
+      </td>
+      <td style="text-align: center;">
+        <h2 style="margin: 0;">Reverse 1999 Thai Dex</h2>
+      </td>
+    </tr>
+  </table>
+
+  <!-- เมนู -->
+  <table width="100%" bgcolor="orange" cellpadding="10">
+    <tr align="center">
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='index.html'">หน้าหลัก</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='character.html'">ตัวละคร</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='psychubes.html'">ไซคิวบส์</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='afflatus.html'">อาฟเฟลลาทัส</button></td>
+    </tr>
+  </table>
+
+  <!-- เนื้อหาหลัก -->
+  <div class="container">
+    <!-- ส่วนหัวตัวละคร -->
+    <div class="character-header">
+      <img src="img/Regulus.png" alt="Regulus">
+      <div>
+        <h2>Regulus(เรกูลัส)</h2>
+        <div class="star">⭐⭐⭐⭐⭐⭐</div> <!-- ปรับดาวได้ -->
+        <div class="element reality">Star</div> <!-- เปลี่ยน class ธาตุ -->
+      </div>
+    </div>
+
+    <!-- ส่วนสกิล -->
+    <div class="skills">
+      <h3>สกิล</h3>
+
+      <div class="skill">
+        <img src="img/SleeplessRave.png" alt="Ultimate">
+        <div>
+          <strong>Sleepless Rave</strong>
+          <p>โจมตีหมู่ (Mass Attack)
+สร้างความเสียหายทางจิต 300% กับศัตรูทุกตัวและทำให้ [Riot and Roll] ติดตัวเพื่อนร่วมทีมทุกคนเป็นเวลา 1 เทิร์น</p>
+          <p>Riot and Roll หลบหลีกการโจมตีทุกแบบที่ไม่ใช่สกิลอัลติเมท เอฟเฟกต์จะหายไปหลังจากผู้ร่ายทำการกระทำแล้ว</p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <img src="img/TreatfortheEars.png" alt="Skill 1">
+        <div>
+          <strong>Treat for the Ears</strong>
+          <p> ✦✧✧</p>
+          <p> [โจมตี] โจมตีเป้าหมายเดี่ยว สร้างความเสียหายทางจิต 200%</p>
+          <p> ✦✦✧</p>
+          <p> [โจมตี] โจมตีเป้าหมายเดี่ยว สร้างความเสียหายทางจิต 300%</p>
+          <p> ✦✦✦</p>
+          <p> [โจมตี] โจมตีเป้าหมายเดี่ยว สร้างความเสียหายทางจิต 500%</p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <img src="img/ChallengefortheEyes.png" alt="Skill 2">
+        <div>
+          <strong>Challenge for the Eyes</strong>
+          <p> ✦✧✧</p>
+          <p> [โจมตี] โจมตีหมู่ สร้างความเสียหายทางจิต 150% ใส่ศัตรู 2 ตัว</p>
+          <p> ✦✦✧</p>
+          <p> [โจมตี] โจมตีหมู่ สร้าง ความเสียหายทางจิต 175% ใส่ศัตรู 2 ตัว เมื่อผู้ใช้โจมตีติดคริติคอล ศัตรูเป้าหมายจะได้รับ Moxie -1</p>
+          <p> ✦✦✦</p>
+          <p> [โจมตี] โจมตีหมู่ สร้าง ความเสียหายทางจิต 275% ใส่ศัตรู 2 ตัว เมื่อผู้ใช้โจมตีติดคริติคอล ศัตรูเป้าหมายจะได้รับ Moxie -2</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ท้ายเว็บ -->
+  <footer>
+    <b>By Nattawat(Dew)</b> |
+    <b>อ้างอิงข้อมูลจาก</b>
+    <a href="https://www.prydwen.gg/re1999/" target="_blank" rel="noopener noreferrer">
+        www.prydwen.gg
+    </a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Reverse 1999 Thai Dex</title>
+  <style>
+    .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .character-grid a {
+        text-decoration: none;
+    }
+    .character-grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+    .character-grid img:hover {
+        transform: scale(1.05);
+    }
+    .character-name {
+        color: white;
+        font-weight: bold;
+        margin-top: 5px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body bgcolor="#f8f8f8">
+
+  <!-- แถบหัว -->
+  <table width="100%" bgcolor="#888888" cellpadding="10">
+  <tr>
+    <td width="100">
+      <img src="Thai Dex logo.jpg" width="100" height="100" alt="โลโก้">
+    </td>
+    <td style="text-align: center;">
+      <h2 style="margin: 0;">Reverse 1999 Thai Dex</h2>
+    </td>
+  </tr>
+  </table>
+
+  <!-- เมนู -->
+  <table width="100%" bgcolor="orange" cellpadding="10">
+    <tr align="center">
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='index.html'">หน้าหลัก</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='character.html'">ตัวละคร</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='psychubes.html'">ไซคิวบส์</button></td>
+      <td><button style="background-color: rgb(193, 99, 0); color: black;" onclick="location.href='afflatus.html'">อาฟเฟลลาทัส</button></td>
+    </tr>
+  </table>
+
+  <!-- เนื้อหาหลัก -->
+  <div style="background-color: rgb(116, 112, 112); padding: 50px; min-height: 70vh;">
+    <div align="center">
+      <font size="6"><b>ตัวละคร</b></font> 
+    </div>
+
+    <div class="character-grid">
+      <a href="Regulus.html">
+          <img src="img/Regulus.png" alt="Regulus">
+          <div class="character-name">Regulus</div>
+      </a>
+      <a href="sonetto.html">
+          <img src="img/Sonetto.png" alt="Sonetto">
+          <div class="character-name">Sonetto</div>
+      </a>
+      <a href="37.html">
+          <img src="img/37.png" alt="37">
+          <div class="character-name">37</div>
+      </a>
+      <!-- เพิ่มตัวละครได้เรื่อยๆ -->
+    </div>
+  </div>
+
+  <!-- ท้ายเว็บ -->
+  <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: orange; text-align: center; padding: 10px;">
+    <b>By Nattawat(Dew)</b> | <b>อ้างอิงข้อมูลจาก</b>
+    <a href="https://www.prydwen.gg/re1999/" target="_blank" rel="noopener noreferrer">www.prydwen.gg</a>
+  </footer>
+
+</body>
+</html>
